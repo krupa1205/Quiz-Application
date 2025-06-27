@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1>Knowledge Challenge</h1>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="question-info">
+                <span class="question-counter">Question 1/5</span>
+                <span class="score-display">Score: 0</span>
+            </div>
+        </header>
+        
+        <main class="quiz-body">
+            <div class="question-text">Loading question...</div>
+            <div class="answer-options">
+                <!-- Options injected via JavaScript -->
+            </div>
+        </main>
+        
+        <footer class="quiz-footer">
+            <button class="btn" id="submit-btn" disabled>Submit</button>
+            <button class="btn" id="next-btn" disabled>Next Question</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
